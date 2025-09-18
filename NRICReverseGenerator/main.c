@@ -1,14 +1,26 @@
-//
 //  main.c
 //  NRICReverseGenerator
-//
-//  Created by GK on 18/9/25.
-//
+
 
 #include <stdio.h>
+#include "annualbirthrate.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
+//
+
+int Years = 0;
+
+int main(void) {
+
+        printf("Enter Year to find out number of births: \n");
+        scanf("%d", &Years);
+   int n = Years-1967;
+        if (n >= 0 && n < numYears) {
+            printf("Number of births for %d is %d\n", Years, births[n]);
+        } else {
+            printf("Data for the year %d is not available.\n", numYears);
+        }
+
+   
+   return 0;
 }
+
