@@ -15,8 +15,8 @@ int resident;
 
 int main(void) {
     printf("Are you a Singaporean (Y/N)? ");
-    scanf("%d", &resident);
-    printf("Enter month and year of birth in MM YYYY format: \n");
+    scanf(" %c", &resident);
+    printf("Enter month and year of birth in MM YYYY format: ");
     scanf("%d %d", &birthMonth, &birthYear);
     
     if (birthYear <2000 && resident == 'Y') {
@@ -45,21 +45,19 @@ int main(void) {
         }
         
 
-        //printf("Enter last 4 characters of your NRIC e.g. 123A: ");
-        //scanf("%d%d%d%d",digit5, digit6, digit7,alpha8);
+        printf("Enter last 4 characters of your NRIC e.g. 123A: ");
+        scanf("%1d%1d%1d%c", &digit5, &digit6, &digit7, &alpha8); // Modify scanf format string here
+
+
 
             
-            /* printf("Enter Year to find out number of births: \n");
-            //scanf("%d", &Years);
-            int n = Years-1967;
-            if (n >= 0 && n < numYears) {
-                printf("Number of births for %d is %d\n", Years, births[n]);
-            } else {
-                printf("Data for the year %d is not available.\n", numYears);
-            }
-            
-            */
-        //printf("Your NRIC is %c%c%c%c%c%c%c%c", digit1, digit2, digit3, digit4, digit5, digit6, digit7, alpha8);
+
+        
+        digit3 = 4;
+        digit4 = 6;
+        
+        printf("Your NRIC is %c%d%d%d%d%d%d%c\n", alpha0, digit1, digit2, digit3, digit4, digit5, digit6, alpha8);
+
         return 0;
         }
         
