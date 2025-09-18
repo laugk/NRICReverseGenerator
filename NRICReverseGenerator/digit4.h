@@ -3,10 +3,14 @@
 // digit4.h
 #ifndef DIGIT4_H
 #define DIGIT4_H
+#include "annualbirthrate.h"
 
 extern int digit3; // Declare digit3 as an extern variable to access it from other files.
 extern char alpha8; // Declare alpha8 as an extern character to access it from other files.
 extern int digit4;  // Declare digit4 as an extern integer to access it from other files.
+
+
+
 
 void setDigit4(void) {
     if (digit3 == 0) {

@@ -4,7 +4,9 @@
 #define AnnualBirthData_H
 extern int births[]; // Declare the array as extern to be accessed from other files.
 #define numYears 58
+int getTotalBirths(int year); // Add this line
 #endif /* AnnualBirthData_H */
+
 
 
 // annualbirthrate.c
@@ -15,13 +17,13 @@ int births[58] = {50560, 47241, 44562, 45934, 47088, 49678, 48269, 43268, 39948,
 
 
 
-/* printf("Enter Year to find out number of births: \n");
-//scanf("%d", &Years);
-int n = Years-1967;
+/*
+int n = birthYear-1967;
 if (n >= 0 && n < numYears) {
     printf("Number of births for %d is %d\n", Years, births[n]);
 } else {
     printf("Data for the year %d is not available.\n", numYears);
 }
+
 
 */

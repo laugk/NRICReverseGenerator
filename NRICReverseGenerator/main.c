@@ -49,7 +49,6 @@ int main(void) {
         scanf("%1d%1d%1d%c", &digit5, &digit6, &digit7, &alpha8); // Modify scanf format string here
 
 
-
             
 
         
