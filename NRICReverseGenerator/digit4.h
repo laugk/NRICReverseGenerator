@@ -202,7 +202,7 @@ void setDigit4(void) {
                 break;
         }
     }
-
+    
     if (digit3 == 5) {
         switch (alpha8) {
             case 'F':
@@ -242,3 +242,4 @@ void setDigit4(void) {
     }
     
 #endif
+

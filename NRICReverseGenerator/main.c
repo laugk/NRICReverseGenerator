@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 #include "annualbirthrate.h"
+//#include "digit4.h"
 
 //
 
@@ -48,17 +49,17 @@ int main(void) {
         printf("Enter last 4 characters of your NRIC e.g. 123A: ");
         scanf("%1d%1d%1d%c", &digit5, &digit6, &digit7, &alpha8); // Modify scanf format string here
 
+// digit 3 computation
 
-            
-
-        
         digit3 = 4;
         digit4 = 6;
+
         
-        printf("Your NRIC is %c%d%d%d%d%d%d%c\n", alpha0, digit1, digit2, digit3, digit4, digit5, digit6, alpha8);
+        printf("Your NRIC is %1c%1d%1d%1d%1d%1d%1d%1d%1c\n", alpha0, digit1, digit2, digit3, digit4, digit5, digit6, digit7, alpha8);
 
         return 0;
         }
         
     }
+
 
