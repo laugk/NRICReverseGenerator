@@ -54,7 +54,19 @@ int main(void) {
 
 // digit 3 computation
 
-        digit3 = 4; // You can set the value of digit3 here as needed.
+        if (birthMonth >=1 && birthMonth <=2) {
+            digit3 = 0;
+        } else if (birthMonth >=3 && birthMonth <=5) {
+            digit3 = 1;
+        } else if (birthMonth >=6 && birthMonth <=8) {
+            digit3 = 2;
+        } else if (birthMonth >=9 && birthMonth <=10) {
+            digit3 = 3;
+        } else if (birthMonth >=11 && birthMonth <=12) {
+            digit3 = 4;
+        }
+            
+            
         digit4 = computeDigit4(digit3, alpha8);
 
 
